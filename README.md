@@ -26,7 +26,7 @@ There are 2 main ways to use the SubSink: the "easy" way and the "add/array" way
 
 Example using the `sink` property to collect the subscriptions using a setter.
 
-```
+```ts
 export class SomeComponent implements OnDestroy {
   private subs = new SubSink();
 
@@ -47,7 +47,7 @@ export class SomeComponent implements OnDestroy {
 
 Example using the `.add` technique. This is similar to what RxJS supports out of the box.
 
-```
+```ts
 export class SomeComponent implements OnDestroy {
   private subs = new SubSink();
 
